@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickCare | Book a hospital appointment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <div>
+      <h1>QuickCare</h1>
+      <p class="tagline">Book a visit with the shortest wait.</p>
+    </div>
+    <p id="clock" class="clock"></p>
+  </header>
+
+  <main class="layout">
+
+    <!-- LEFT: booking steps -->
+    <section class="book" aria-labelledby="book-title">
+      <h2 id="book-title">Book an appointment</h2>
+
+      <h3 class="step-title"><span class="step">1</span>Choose a doctor</h3>
+      <div id="doctor-list" class="doctor-list"></div>
+
+      <h3 class="step-title"><span class="step">2</span>Pick a date and time</h3>
+      <div class="date-row">
+        <input type="date" id="date-input" aria-label="Appointment date">
+        <button type="button" id="soonest-btn" class="secondary">Find soonest slot</button>
+      </div>
+      <div id="slot-grid" class="slot-grid"></div>
+
+      <h3 class="step-title"><span class="step">3</span>Patient details</h3>
+      <div class="fields">
+        <label>Full name
+          <input type="text" id="name-input" autocomplete="name">
+        </label>
+        <label>Phone number
+          <input type="tel" id="phone-input" inputmode="numeric" maxlength="10" autocomplete="tel">
+        </label>
+      </div>
+
+      <p id="summary" class="summary"></p>
+      <button type="button" id="book-btn" class="primary">Confirm appointment</button>
+      <p id="message" class="message" role="status"></p>
+    </section>
+
+    <!-- RIGHT: appointment list -->
+    <section class="queue" aria-labelledby="queue-title">
+      <h2 id="queue-title">Upcoming appointments</h2>
+      <p id="queue-note" class="queue-note"></p>
+      <ul id="appointment-list" class="appointment-list"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
