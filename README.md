@@ -54,4 +54,4 @@ The application also displays upcoming appointments and allows users to cancel e
 **Bhavesh Pathrabe**
 
 - GitHub: [https://github.com/pathrabe2416/asssignment-3](https://github.com/pathrabe2416/asssignment-3)
-- LinkedIn:  `https://www.linkedin.com/in/bhavesh-pathrabe-92871b372/`
+- LinkedIn:  https://www.linkedin.com/in/bhavesh-pathrabe-92871b372/
